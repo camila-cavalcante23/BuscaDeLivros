@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BuscaDeLivros/static/css/main.74e4b037.css",
+    "main.js": "/BuscaDeLivros/static/js/main.a97b48b2.js",
+    "index.html": "/BuscaDeLivros/index.html",
+    "main.74e4b037.css.map": "/BuscaDeLivros/static/css/main.74e4b037.css.map",
+    "main.a97b48b2.js.map": "/BuscaDeLivros/static/js/main.a97b48b2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74e4b037.css",
+    "static/js/main.a97b48b2.js"
+  ]
+}
