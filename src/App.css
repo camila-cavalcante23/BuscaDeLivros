@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Literata:wght@400;700&display=swap');
+
+body {
+    font-family: 'Literata', serif;
+    background-color: #e5d3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.book {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdf8e7;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.book::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: #b08850;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.page {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.right-page {
+    text-align: left;
+    overflow-y: auto;
+    padding-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    color: #5a3e1b;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid #b08850;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #fdf8e7;
+    text-align: center;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #b08850;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8b5e34;
+}
+
+.results {
+    max-height: 30px;
+}
+
+.result-item {
+    background: #fdf8e7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: -100px;
+    color: #5a3e1b;
+}
+
+.result-item a {
+    color: #8b5e34;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
 }
