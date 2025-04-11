@@ -7,7 +7,7 @@ Este projeto foi desenvolvido como parte do desafio do curso **Desenvolvimento d
 - Campo de busca e botão de pesquisa
 - Requisição à API com o termo informado
 - Exibição dos resultados com título e link
-- Estilo visual temático de livro 📚
+- Estilo visual temático de livro 
 - Componentes funcionais e React Hooks
 
 ## 🚀 Tecnologias
